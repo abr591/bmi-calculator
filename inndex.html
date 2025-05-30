@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calculator"></i> BMI Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter your height">
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter your weight">
+            </div>
+            <button id="calculate">Calculate BMI</button>
+            <div class="result">
+                <h3>Your BMI:</h3>
+                <div id="bmi-value">00.0</div>
+                <div id="bmi-category">Enter your details</div>
+            </div>
+            <div class="bmi-scale">
+                <div class="scale-item underweight">
+                    <span>Underweight</span>
+                    <span>< 18.5</span>
+                </div>
+                <div class="scale-item normal">
+                    <span>Normal</span>
+                    <span>18.5 - 24.9</span>
+                </div>
+                <div class="scale-item overweight">
+                    <span>Overweight</span>
+                    <span>25 - 29.9</span>
+                </div>
+                <div class="scale-item obese">
+                    <span>Obese</span>
+                    <span>≥ 30</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made by Abdulrehman</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
